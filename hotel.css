@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+}
+nav{
+
+    display: flex;
+    align-items: center;
+   position: relative;
+   background-color: purple;
+
+}
+
+
+nav .logo p{
+     font-size: 30px;
+     font-weight: bold;
+     color:black;
+     cursor: pointer;
+     float: left;
+     letter-spacing: 1.5px;
+     margin: 0 30px;
+}
+nav ul{
+   display: flex;
+   float: right;
+}
+nav li {
+    display:inline-block;
+    list-style: none;
+}
+nav li a{
+    font-size: 18px;
+    padding: 0px 30px;
+    color: yellow;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: red;
+}
+button{
+   text-decoration: none;
+    background-color: greenyellow;
+    border: none;
+    outline:none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 9px 25px;
+}
+.row{
+    display:flex ;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: gold;
+    font-size: 50px;
+}
+.col p{
+    color: #fff;
+    font-size: 25px;
+    line-height: 25px;
+}
+/* home page descrption*/
+#home{
+    display:flex;
+    flex-direction:column;
+    padding: 3px 200px;
+    justify-content: center;
+    height: 630px;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background-image: url(hotels.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;   
+    z-index: -1;
+   
+}
+
+#home h1{
+    background-color: black;
+    border-radius: 12px;
+    color: golden;
+    text-align: center;
+}
+#home p{ 
+   
+    color: black;
+    text-align: center;
+
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+/*services*/
+
+#services{
+    margin: 30px;
+    display: flex;
+}
+#services .box{
+    background-color: white;
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+}
+#services .box img{
+    height: 360px;
+    margin: auto;
+    display: block;
+    
+}
+.center{
+    text-align: center;
+}
+
+section h1{
+    background-color: black;
+}
+
+footer{
+    background:black;
+    padding: 9px 20px;
+    color: white;
+}
